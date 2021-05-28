@@ -1,15 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
- /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* COM162 Assignment 170153599 170153038 */
+//  main
+//
+//  Copyright © 2019 Matthew Chan
 
 package robot_test;
 import javax.swing.*;
@@ -87,7 +78,7 @@ class ActionEventDemo implements ActionListener {
 
     public void checkMotor() {
         //Connect to robot and motors
-        Robot myRobot = new Robot("dia-lego-g2");
+        Robot myRobot = new Robot("dia-lego");
         Motor leftMotor = myRobot.getLargeMotor(Motor.Port.B);
         Motor rightMotor = myRobot.getLargeMotor(Motor.Port.C);
         Motor grab = myRobot.getLargeMotor(Motor.Port.A);
@@ -127,7 +118,7 @@ class ActionEventDemo implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         //connect to the robot and motors
-        Robot myRobot = new Robot("dia-lego-g2");
+        Robot myRobot = new Robot("dia-lego");
         Motor leftMotor = myRobot.getLargeMotor(Motor.Port.B);
         Motor rightMotor = myRobot.getLargeMotor(Motor.Port.C);
         Motor grab = myRobot.getLargeMotor(Motor.Port.A);
@@ -234,7 +225,7 @@ class ActionEventDemo implements ActionListener {
     }
 }
 
-public class G2_Robot {
+public class Robot {
 
     public static void main(String[] args) {
         ActionEventDemo button = new ActionEventDemo();
